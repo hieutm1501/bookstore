@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Calisto-MT';
+    src: url(../fonts/Calisto-MT.ttf);
+}
+
+@font-face {
+    font-family: 'Calisto-MT-Italic';
+    src: url(../fonts/Calisto-MT-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Calisto-MT-Bold';
+    src: url(../fonts/Calisto-MT-Bold.ttf);
+}
+
+/* Colors */
+/* Universal style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Calisto-MT";
+}
+
+.footer-bottom {
+    padding: 25px 0;
+    background-color: #2d2d2d;
+}
+
+.footer-bottom-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom-inner p {
+    color: #777;
+}
+
+.footer-bottom-inner a {
+    color: #c18f59;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-bottom-inner a:hover {
+    color: #777;
+}
+
+.footer-bottom-inner .footer-bottom__img img {
+    margin-right: 25px;
+}
+
+.footer-bottom-inner .footer-bottom__img img:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 992px) {
+    .footer-bottom-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom-inner p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}

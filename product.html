@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/fotter.css">
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <nav class="nav-menu">
+                <div class="nav-menu-list">
+                    <div class="nav-menu-list-logo">
+                        <p>BookStore</p>
+                    </div>
+                    <div>
+                        <ul class="snip1143">
+                            <li><a href="/index.html" data-hover="Home">Home</a></li>
+                            <li><a href="/About.html" data-hover="About Us">About Us</a></li>
+                            <li><a href="blog.html" data-hover="Blog">Blog</a></li>
+                            <li><a href="contact.html" data-hover="Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-menu-list-signin">
+                        <a class="cart" href="./cart.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: rgb(255, 255, 255);transform: msFilter">
+                                <path
+                                    d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                                </path>
+                                <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                                <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                            </svg>
+                        </a>
+                        <a href="./signin.html"> <button>Đăng Nhập</button></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="h1-allProduct">All Product Books</h1>
+        <section class="fh5co-books">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+                <button type="button" id="search-button">Tìm kiếm</button>
+                <button id="sort-az">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);transform: msFilter">
+                        <path
+                            d="M19.707 14.707A1 1 0 0 0 19 13h-7v2h4.586l-4.293 4.293A1 1 0 0 0 13 21h7v-2h-4.586l4.293-4.293zM7 3.99H5v12H2l4 4 4-4H7zM17 3h-2c-.417 0-.79.259-.937.649l-2.75 7.333h2.137L14.193 9h3.613l.743 1.981h2.137l-2.75-7.333A1 1 0 0 0 17 3zm-2.057 4 .75-2h.613l.75 2h-2.113z">
+                        </path>
+                    </svg>
+                </button>
+                <button id="sort-za">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);transform: msFilter">
+                        <path
+                            d="M19.707 14.707A1 1 0 0 0 19 13h-7v2h4.586l-4.293 4.293A1 1 0 0 0 13 21h7v-2h-4.586l4.293-4.293zM6 3.99l-4 4h3v12h2v-12h3zM17 3h-2c-.417 0-.79.259-.937.649l-2.75 7.333h2.137L14.193 9h3.613l.743 1.981h2.137l-2.75-7.333A1 1 0 0 0 17 3zm-2.057 4 .75-2h.613l.75 2h-2.113z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="site-container">
+                <div class="books">
+                    <!-- hiển thị ở đây -->
+                    <div id="product-list" class="single-book">
+
+                    </div>
+                    <div id="product-detail-overlay">
+                        <div id="product-detail">
+                            <h2 id="product-detail-title">Chi tiết sản phẩm</h2>
+                            <img id="product-detail-image" src="" alt="">
+                            <h3 id="product-detail-name"></h3>
+                            <p id="product-detail-price"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div id="quickview-overlay">
+                    <div id="quickview">
+                        <h2 id="quickview-name"></h2>
+                        <img id="quickview-image" src="" alt="">
+                        <p id="quickview-description"></p>
+                        <p id="quickview-price"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div class="fotter">
+        <div class="footer-bottom">
+            <div class="site-container footer-bottom-inner">
+                <p>© 2019 Author | Design by mhieu <a href="https://mhieu.vercel.app/" target="_blank">Designer</a> |
+                    All
+                    rights Reserved.</p>
+                <div class="footer-bottom__img">
+                    <img src="./images/footer-mastercard.png" alt="footer image">
+                    <img src="./images/footer-paypal.png" alt="footer image">
+                    <img src="./images/footer-visa.png" alt="footer image">
+                    <img src="./images/footer-fedex.png" alt="footer image">
+                    <img src="./images/footer-dhl.png" alt="footer image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/product.js"></script>
+</body>
+
+</html>

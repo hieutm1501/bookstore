@@ -1,0 +1,118 @@
+/* nav */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Calisto-MT";
+}
+
+
+.nav-menu .nav-menu-list {
+    background: #000000f1;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu-list-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-list-logo p {
+    color: #ffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.nav-menu .snip1143 {
+    font-family: 'Raleway', Arial, sans-serif;
+    padding-top: 4.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-menu .snip1143 * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.nav-menu .snip1143 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    overflow: hidden;
+}
+
+.nav-menu .snip1143 a {
+    padding: 0.3em 0;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav-menu .snip1143 a:before,
+.snip1143 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.nav-menu .snip1143 a:before {
+    top: 100%;
+    display: block;
+    height: 3px;
+    width: 100%;
+    content: "";
+    background-color: #c0392b;
+}
+
+.nav-menu .snip1143 a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: white;
+    white-space: nowrap;
+}
+
+.nav-menu .snip1143 li:hover a,
+.nav-menu .snip1143 .current a {
+    transform: translateY(-100%);
+}
+
+.nav-menu-list-signin {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-list-signin a button {
+    color: #ffff;
+    background: #084ada;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: #084ada;
+}
+
+.nav-menu-list-signin a button:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav-menu-list-signin .cart {
+    background-color: #0e0e0e;
+    margin-right: 20px;
+}
+
+.nav-menu-list-signin .cart i {
+    color: aliceblue;
+}

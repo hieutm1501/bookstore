@@ -1,0 +1,509 @@
+@font-face {
+  font-family: 'Calisto-MT';
+  src: url(../fonts/Calisto-MT.ttf);
+}
+
+@font-face {
+  font-family: 'Calisto-MT-Italic';
+  src: url(../fonts/Calisto-MT-Italic.ttf);
+}
+
+@font-face {
+  font-family: 'Calisto-MT-Bold';
+  src: url(../fonts/Calisto-MT-Bold.ttf);
+}
+
+/* Colors */
+/* Universal style */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Calisto-MT";
+}
+
+.site-container {
+  width: 1115px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1250px) {
+  .site-container {
+    width: 90%;
+  }
+}
+
+/* Navbar */
+.nav-menu-list {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+
+
+/* Navigation burger end */
+.fh5co-top-banner {
+  position: relative;
+  background-image: url("../images/top-banner-bckg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.fh5co-top-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.9;
+}
+
+.fh5co-top-banner .site-container {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.top-banner__inner {
+  display: flex;
+  align-items: center;
+}
+
+.top-banner__inner .top-banner__text {
+  margin-left: 54px;
+}
+
+@media (max-width: 1250px) {
+  .top-banner__inner .top-banner__text {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-banner__inner .top-banner__text {
+    width: 50%;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .top-banner__inner .top-banner__text {
+    width: 65%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+
+.top-banner__inner .top-banner__text p {
+  margin-bottom: 42px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .top-banner__inner .top-banner__text p {
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+}
+
+.top-banner__inner .top-banner__h2 {
+  font-size: 74px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: "Calisto-MT-Bold";
+}
+
+@media (max-width: 1250px) {
+  .top-banner__inner .top-banner__h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-banner__inner .top-banner__h2 {
+    font-size: 35px;
+  }
+}
+
+.top-banner__inner .top-banner__text-up .top-banner__h2 {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .top-banner__inner .top-banner__text-up .top-banner__h2 {
+    margin-top: 0;
+  }
+}
+
+.top-banner__inner .top-banner__text-down {
+  margin-bottom: 20px;
+  padding-left: 27%;
+}
+
+.top-banner__inner .top-banner__text-down .top-banner__h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .top-banner__inner .top-banner__text-down .top-banner__h2 {
+    margin-bottom: 0;
+  }
+}
+
+.top-banner__inner .top-banner__image {
+  font-size: 0;
+}
+
+@media (max-width: 1250px) {
+  .top-banner__inner .top-banner__image {
+    width: 50%;
+  }
+
+  .top-banner__inner .top-banner__image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .top-banner__inner .top-banner__image {
+    width: 65%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .top-banner__inner {
+    flex-direction: column;
+  }
+}
+
+.brand-span {
+  font-size: 14px;
+  color: #c18f59;
+}
+
+.brand-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #c18f59;
+  border: 1px solid #fff;
+  transition: 0.3s ease;
+}
+
+.brand-button:hover,
+.brand-button:focus {
+  color: #777;
+}
+
+
+
+.slick-slide:focus {
+  outline: none;
+}
+
+.fh5co-books {
+  margin-bottom: 122px;
+}
+
+.fh5co-books .universal-h2 {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+
+.fh5co-books .books-brand-button {
+  text-align: center;
+}
+
+.fh5co-books .books-brand-button .brand-button {
+  font-size: 16px;
+  text-transform: none;
+  border-color: #c18f59;
+}
+
+.fh5co-books .books-brand-button .brand-button:hover {
+  border-color: #777;
+}
+
+@media (max-width: 1250px) {
+  .fh5co-books {
+    margin-bottom: 60px;
+  }
+}
+
+.books {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 559px) {
+  .books {
+    justify-content: space-around;
+  }
+}
+
+.single-book {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.single-book .single-book__img {
+  position: relative;
+  display: block;
+  font-size: 0;
+}
+
+.single-book .single-book__img .single-book_download {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: 0.3s ease;
+}
+
+.single-book .single-book__img .single-book_download img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.single-book .single-book__img:hover .single-book_download {
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.single-book .single-book__title {
+  margin: 19px 0 18px;
+  font-size: 18px;
+}
+
+.single-book .single-book__price {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  color: #c18f59;
+}
+
+@media (max-width: 1250px) {
+  .single-book {
+    margin-right: 10px;
+  }
+
+  .single-book:last-child {
+    margin-right: 0;
+  }
+}
+
+.rating {
+  margin-top: 8px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.rating span {
+  font-size: 23px;
+  color: #ffd200;
+  cursor: pointer;
+}
+
+.rating>span:hover:before,
+.rating>span:hover~span:before {
+  content: "\2605";
+  position: absolute;
+}
+
+.fh5co-counter {
+  position: relative;
+  margin-bottom: 122px;
+  padding: 100px 0;
+  background-image: url("../images/book-bckg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fh5co-counter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c18f59;
+  opacity: 0.9;
+}
+
+.fh5co-counter .site-container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 850px) {
+  .fh5co-counter {
+    padding: 50px 0 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.counter-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single-count {
+  width: 23%;
+  text-align: center;
+  color: #fff;
+}
+
+.single-count span {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.single-count p {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 850px) {
+  .single-count {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+
+  .single-count .count {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .single-count {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.single-count__text {
+  display: flex;
+  justify-content: center;
+}
+
+.single-count__text img {
+  margin-right: 20px;
+}
+
+.fh5co-quotes {
+  position: relative;
+  padding: 135px 0 172px;
+  text-align: center;
+  background-image: url("../images/quotes-bckg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.fh5co-quotes::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.9;
+}
+
+.fh5co-quotes .site-container {
+  position: relative;
+  z-index: 1;
+}
+
+.fh5co-quotes .universal-h2 {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  color: #fff !important;
+}
+
+.about-me-slider {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.about-me-slider .about-me-slider-obert {
+  width: 100%;
+}
+
+.fh5co-quotes p {
+  width: 43%;
+  margin: 0 auto 45px;
+  color: #fff;
+  line-height: 24px;
+}
+
+@media (max-width: 620px) {
+  .fh5co-quotes p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.fh5co-quotes img {
+  margin: 0 auto 5px;
+}
+
+.fh5co-quotes h4 {
+  margin-bottom: 5px;
+  font-size: 25px;
+  color: #c18f59;
+}
+
+.fh5co-quotes .slick-arrow {
+  bottom: -8%;
+}
+
+.fh5co-quotes .slick-prev {
+  left: 45.5%;
+}
+
+@media (max-width: 1150px) {
+  .fh5co-quotes .slick-prev {
+    left: 34%;
+  }
+}
+
+.fh5co-quotes .slick-next {
+  right: 45.5%;
+}
+
+@media (max-width: 1150px) {
+  .fh5co-quotes .slick-next {
+    right: 34%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .fh5co-quotes {
+    padding: 75px 0 95px;
+  }
+
+  .fh5co-quotes p {
+    width: 90%;
+  }
+}

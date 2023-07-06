@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carts</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/fotter.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="nav-menu">
+            <div class="nav-menu-list">
+                <div class="nav-menu-list-logo">
+                    <p>BookStore</p>
+                </div>
+                <div>
+                    <ul class="snip1143">
+                        <li><a href="/index.html" data-hover="Home">Home</a></li>
+                        <li><a href="/About.html" data-hover="About Us">About Us</a></li>
+                        <li><a href="blog.html" data-hover="Blog">Blog</a></li>
+                        <li><a href="contact.html" data-hover="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-menu-list-signin">
+                    <a class="cart" href="./cart.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill: rgb(255, 255, 255);transform: msFilter">
+                            <path
+                                d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                            </path>
+                            <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                            <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                        </svg>
+                    </a>
+                    <a href="./signin.html"> <button>Đăng Nhập</button></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="cart">
+            <h2 class="cart__title">Giỏ hàng của bạn</h2>
+            <div class="cart__items">
+
+                <div id="cart-list" class="single-book">
+                    <!-- hiển thị dữ liệu api ở đây -->
+                </div>
+
+
+            </div>
+            <div class="cart__total">
+                <h3 class="cart__total-title">Tổng cộng:</h3>
+                <p class="cart__total-amount">$30.00</p>
+            </div>
+            <button class="cart__checkout">Thanh toán</button>
+        </div>
+    </div>
+    <div class="fotter">
+        <div class="footer-bottom">
+            <div class="site-container footer-bottom-inner">
+                <p>© 2019 Author | Design by mhieu <a href="https://mhieu.vercel.app/" target="_blank">Designer</a> |
+                    All
+                    rights Reserved.</p>
+                <div class="footer-bottom__img">
+                    <img src="./images/footer-mastercard.png" alt="footer image">
+                    <img src="./images/footer-paypal.png" alt="footer image">
+                    <img src="./images/footer-visa.png" alt="footer image">
+                    <img src="./images/footer-fedex.png" alt="footer image">
+                    <img src="./images/footer-dhl.png" alt="footer image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Calisto-MT';
+    src: url(../fonts/Calisto-MT.ttf);
+}
+
+@font-face {
+    font-family: 'Calisto-MT-Italic';
+    src: url(../fonts/Calisto-MT-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Calisto-MT-Bold';
+    src: url(../fonts/Calisto-MT-Bold.ttf);
+}
+
+/* Colors */
+/* Universal style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Calisto-MT";
+}
+
+.container .cart {
+    height: 100%;
+    padding-top: 100px;
+    background: #454545c5;
+    padding-bottom: 170px;
+}
+
+.cart {
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.cart__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #eaff01;
+}
+
+.cart__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cart__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.cart__item-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.cart__item-details {
+    flex-grow: 1;
+}
+
+.cart__item-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #8cc4df;
+}
+
+.cart__item-price {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b42653;
+}
+
+.cart__item-quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart__item-quantity label {
+    font-size: 16px;
+    color: #ffff;
+}
+
+.cart__item-quantity input {
+    width: 50px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.cart__item-remove {
+    padding: 10px;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cart__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart__total-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cart__total-amount {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.cart__checkout {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
